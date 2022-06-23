@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackyWolf.Data.Interfaces", "BlackyWolf.Data.Interfaces\BlackyWolf.Data.Interfaces.csproj", "{0705E4D3-E15B-441E-AC55-2FA7D0A89E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackyWolf.Data.Interfaces.Tests", "BlackyWolf.Data.Interfaces.Tests\BlackyWolf.Data.Interfaces.Tests.csproj", "{605A29D3-DFBC-4E59-BA45-F43F1D7179DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0705E4D3-E15B-441E-AC55-2FA7D0A89E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0705E4D3-E15B-441E-AC55-2FA7D0A89E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0705E4D3-E15B-441E-AC55-2FA7D0A89E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0705E4D3-E15B-441E-AC55-2FA7D0A89E24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{605A29D3-DFBC-4E59-BA45-F43F1D7179DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605A29D3-DFBC-4E59-BA45-F43F1D7179DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605A29D3-DFBC-4E59-BA45-F43F1D7179DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605A29D3-DFBC-4E59-BA45-F43F1D7179DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8F069B4-9AE1-46B4-8A28-952A0D764416}
+	EndGlobalSection
+EndGlobal
