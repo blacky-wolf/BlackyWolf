@@ -1,3 +1,6 @@
 ﻿namespace BlackyWolf.Data.Interfaces.Tests.Mocks;
 
-internal record Customer(string Id, string Name, int Age);
+internal record Customer(string Name, int Age)
+{
+    public string Id { get; set; } = Guid.NewGuid().ToString();
+}

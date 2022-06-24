@@ -22,10 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Tests\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BlackyWolf.Data.Interfaces\BlackyWolf.Data.Interfaces.csproj" />
   </ItemGroup>
 
