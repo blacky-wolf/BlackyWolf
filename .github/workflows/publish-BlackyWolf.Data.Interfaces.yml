@@ -41,7 +41,7 @@ jobs:
       
       # Build project
       - name: Build project
-        run: dotnet build BlackyWolf.Data.Interfaces --configuration Release
+        run: dotnet build --source .NET/BlackyWolf.Data.Interfaces/BlackyWolf.Data.Interfaces --configuration Release
       
       # Run tests
       - name: Run tests
