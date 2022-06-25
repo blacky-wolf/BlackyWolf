@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Blacky Wolf</Authors>
+    <Description>A common set of interfaces for working with, reading, and manipulating data. These interfaces are split up to be as modular as possible.</Description>
+    <Copyright>Copyright © Blacky Wolf. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/blacky-wolf/BlackyWolf</PackageProjectUrl>
+    <PackageIcon>LogoIcon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\branding\LogoIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
