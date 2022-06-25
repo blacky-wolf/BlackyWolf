@@ -24,7 +24,7 @@ jobs:
         dotnet-version: 6.0.x
         
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./.NET/BlackyWolf.Data.Interfaces/**/*.csproj
       
     - name: Build
       run: dotnet build --no-restore
