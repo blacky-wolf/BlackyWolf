@@ -35,6 +35,6 @@ jobs:
       run: dotnet test ./.NET/BlackyWolf.Data.Interfaces/BlackyWolf.Data.Interfaces.Tests/BlackyWolf.Data.Interfaces.Tests.csproj --no-build --verbosity normal
       
     - name: NuGet push
-      run: dotnet nuget push ./.NET/BlackyWolf.Data.Interfaces/BlackyWolf.Data.Interfaces/bin/Debug/BlackyWolf.Data.Interfaces.1.0.0.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push **/*/BlackyWolf.Data.Interfaces.*.nupkg -k $NUGET_AUTH_TOKEN --source https://api.nuget.org/v3/index.json
       env:
         NUGET_AUTH_TOKEN: ${{ secrets.NUGET_AUTH_TOKEN }}
