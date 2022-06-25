@@ -29,10 +29,12 @@ jobs:
       run: dotnet restore ./.NET/BlackyWolf.Data.Interfaces/BlackyWolf.Data.Interfaces/BlackyWolf.Data.Interfaces.csproj
       
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build ./.NET/BlackyWolf.Data.Interfaces/BlackyWolf.Data.Interfaces/BlackyWolf.Data.Interfaces.csproj --no-restore
       
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ./.NET/BlackyWolf.Data.Interfaces/BlackyWolf.Data.Interfaces.Tests/BlackyWolf.Data.Interfaces.Tests.csproj --no-build --verbosity normal
       
     - name: NuGet push
-      run: dotnet nuget push **/*.nupkg
+      run: dotnet nuget push ./.NET/BlackyWolf.Data.Interfaces/BlackyWolf.Data.Interfaces/**/*.nupkg -k $NUGET_AUTH_TOKEN
+      env:
+        NUGET_AUTH_TOKEN: ${{ secrets.NUGET_AUTH_TOKEN }}
